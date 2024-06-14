@@ -1,65 +1,65 @@
 const find = require('appium-flutter-finder')
 
-// describe('Place Food order', () => {
-//     it('should login with valid credentials', async () => {
-//     //   Add specs here //
-//     const boardingScreenBtn = find.byValueKey('boardingscreen_btn');
-//     const authLogin =  find.byValueKey("auth_screen_login");
-//     const authRegister =  find.byValueKey("auth_screen_register");
-//     const email =  find.byValueKey("login_email");
-//     const password =  find.byValueKey("login_pass");
-//     const loginBtn =  find.byValueKey("login_btn");
-//     const foodOrderTile =  find.byValueKey('foodOrder_key');
-//     const vendorList = find.byValueKey('vendorList_key');
-//     const requiredItem = find.byText('Nekratshi Grills');
-//     const foodItem = find.byText('Test Product');
-//     const addToCart = find.byText('Add to Cart');
-//     const cartIcon = find.byValueKey('cartIcon_key');
-//     const checkout = find.byValueKey('checkout');
-//     const placeOrder = find.byValueKey('placeOrder');
-//     const proceedPayment = find.byText('proceedPayment_key');
-//     const backToOrderDetails = find.byValueKey('backToOrderDetails');
-//     const cancelOrder = find.byValueKey('cancelOrder');
+describe('Place Food order', () => {
+    it('should login with valid credentials', async () => {
+    //   Add specs here //
+    const boardingScreenBtn = find.byValueKey('boardingscreen_btn');
+    const authLogin =  find.byValueKey("auth_screen_login");
+    const authRegister =  find.byValueKey("auth_screen_register");
+    const email =  find.byValueKey("login_email");
+    const password =  find.byValueKey("login_pass");
+    const loginBtn =  find.byValueKey("login_btn");
+    const foodOrderTile =  find.byValueKey('foodOrder_key');
+    const vendorList = find.byValueKey('vendorList_key');
+    const requiredItem = find.byText('Nekratshi Grills');
+    const foodItem = find.byText('Test Product');
+    const addToCart = find.byText('Add to Cart');
+    const cartIcon = find.byValueKey('cartIcon_key');
+    const checkout = find.byValueKey('checkout');
+    const placeOrder = find.byValueKey('placeOrder');
+    const proceedPayment = find.byText('proceedPayment_key');
+    const backToOrderDetails = find.byValueKey('backToOrderDetails');
+    const cancelOrder = find.byValueKey('cancelOrder');
 
-//     // await driver.elementClick(find.byText('Allow'));
-//     await driver.elementClick(boardingScreenBtn);
-//     await driver.elementClick(boardingScreenBtn);
-//     await driver.elementClick(boardingScreenBtn);
-//     await driver.elementClick(authLogin);
-//     await driver.execute('flutter:waitFor', email);
-//     await driver.elementSendKeys(email, 'developer');
-//     await driver.execute('flutter:waitFor', password);
-//     await driver.elementSendKeys(password, 'bento1234');
-//     await driver.elementClick(loginBtn);
+    // await driver.elementClick(find.byText('Allow'));
+    await driver.elementClick(boardingScreenBtn);
+    await driver.elementClick(boardingScreenBtn);
+    await driver.elementClick(boardingScreenBtn);
+    await driver.elementClick(authLogin);
+    await driver.execute('flutter:waitFor', email);
+    await driver.elementSendKeys(email, 'developer');
+    await driver.execute('flutter:waitFor', password);
+    await driver.elementSendKeys(password, 'bento1234');
+    await driver.elementClick(loginBtn);
 
-//     await driver.pause(20000) // wait for 20 seconds
+    await driver.pause(20000) // wait for 20 seconds
 
-//     await driver.elementClick(foodOrderTile);
-//     await driver.pause(10000) 
-//     await driver.execute('flutter:scrollUntilVisible', find.byValueKey('vendorList'), {item:find.byText('Nekratshi Grills'), dxScroll: 0, dyScroll: -400,waitTimeoutMilliseconds: 10000});
-//     await driver.elementClick(requiredItem)
-//     await driver.pause(5000) 
-//     await driver.elementClick(foodItem)
+    await driver.elementClick(foodOrderTile);
+    await driver.pause(10000) 
+    await driver.execute('flutter:scrollUntilVisible', find.byValueKey('vendorList'), {item:find.byText('Nekratshi Grills'), dxScroll: 0, dyScroll: -400,waitTimeoutMilliseconds: 10000});
+    await driver.elementClick(requiredItem)
+    await driver.pause(5000) 
+    await driver.elementClick(foodItem)
     
-//     await driver.elementClick(addToCart)
+    await driver.elementClick(addToCart)
 
-//     await driver.elementClick(cartIcon)
+    await driver.elementClick(cartIcon)
     
-//     await driver.elementClick(checkout)
+    await driver.elementClick(checkout)
 
-//     await driver.elementClick(placeOrder)
-//     await driver.pause(5000) 
-//     // await driver.elementClick(proceedPayment)
-//     // await driver.pause(5000) 
-//     // await driver.elementClick(backToOrderDetails)
+    await driver.elementClick(placeOrder)
+    await driver.pause(5000) 
+    // await driver.elementClick(proceedPayment)
+    // await driver.pause(5000) 
+    // await driver.elementClick(backToOrderDetails)
 
-//     // await driver.pause(10000) 
-//     // await driver.elementClick(cancelOrder)
+    // await driver.pause(10000) 
+    // await driver.elementClick(cancelOrder)
 
-//     // await driver.pause(30000) 
+    // await driver.pause(30000) 
 
-//     })
-// })
+    })
+})
 
 describe('Place Parcel order', () => {
     it('should login with valid credentials', async () => {
